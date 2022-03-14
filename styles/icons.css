@@ -1,0 +1,24 @@
+.icon-spritesheet {
+    background-image: url('https://images.rbxcdn.com/f4000b6d03a0df7153556d2514045629-navigation_10022018.svg');
+}
+
+.icon-burger-menu, .icon-robux, .icon-settings {
+    width: 28px;
+    height: 28px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    background-size: 56px auto;
+}
+
+.icon-burger-menu {
+    background-position: 0 0;
+}
+
+.icon-robux {
+    background-position: 0 -28px;
+}
+
+.icon-settings {
+    background-position: 0 -84px;
+}
