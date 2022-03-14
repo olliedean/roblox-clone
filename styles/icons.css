@@ -2,7 +2,7 @@
     background-image: url('https://images.rbxcdn.com/f4000b6d03a0df7153556d2514045629-navigation_10022018.svg');
 }
 
-.icon-burger-menu, .icon-robux, .icon-settings {
+.icon-burger-menu, .icon-robux, .icon-settings, .icon-search {
     width: 28px;
     height: 28px;
     display: inline-block;
@@ -21,4 +21,8 @@
 
 .icon-settings {
     background-position: 0 -84px;
+}
+
+.icon-search {
+    background-position: 0 -108px;
 }
