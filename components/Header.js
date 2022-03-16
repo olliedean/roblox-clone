@@ -7,26 +7,29 @@ import NavItem from "./NavItem";
 export default function Header() {
 
     return (
-        <div className="header flex px-3 items-center">
-            <div className="flex-1 flex items-center">
-                <span className="icon-spritesheet icon-burger-menu mr-3"></span>
-                <Image
-                    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMCIgaGVpZ2h0PSIzMCI+PHBhdGggZD0iTTguMyAzLjdMMy42IDIxLjhsMTguMSA0LjYgNC42LTE4LjEtMTgtNC42em04IDEzLjZsLTMuNS0uOS45LTMuNSAzLjUuOS0uOSAzLjV6IiBmaWxsPSIjZmZmIi8+PC9zdmc+"
-                    width={30}
-                    height={30}
-                    className="ml-3"
-                />
+        <div className="header flex px-3 items-center items-stretch">
+            <div className="flex-1 flex items-stretch">
+                <div className="flex items-center">
+                    <span className="icon-spritesheet icon-burger-menu mr-3"></span>
+                    <Image
+                        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMCIgaGVpZ2h0PSIzMCI+PHBhdGggZD0iTTguMyAzLjdMMy42IDIxLjhsMTguMSA0LjYgNC42LTE4LjEtMTgtNC42em04IDEzLjZsLTMuNS0uOS45LTMuNSAzLjUuOS0uOSAzLjV6IiBmaWxsPSIjZmZmIi8+PC9zdmc+"
+                        width={30}
+                        height={30}
+                        className="ml-3"
+                    />
+                </div>
                 <div className="pl-3 flex">
                     <NavItem>Discover</NavItem>
                     <NavItem>Avatar Shop</NavItem>
                     <NavItem>Create</NavItem>
                     <NavItem>Robux</NavItem>
                 </div>
-                <div className="ml-5">
-                    <FontAwesomeIcon icon={faSearch} className="absolute ml-2 mt-[6.5px] text-slate-300"/>
+                <div className="ml-5 flex items-center">
+                    <FontAwesomeIcon icon={faSearch} className="absolute ml-2 text-slate-300"/>
                     <input
-                        className="bg-black bg-opacity-50 px-3 pl-9 text-lg placeholder:text-slate-500
-                            rounded-lg border-[1px] border-slate-700 focus:border-slate-600"
+                        className="bg-black bg-opacity-50 pt-[2px] px-3 pl-9 font-semibold placeholder:text-slate-500
+                            rounded-lg border-[1px] border-slate-700 focus:border-slate-600
+                            font-light w-80"
                         type="text"
                         placeholder="Search"
                     >
