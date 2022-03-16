@@ -2,15 +2,92 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap');
+@font-face {
+  font-family: 'Gotham';
+  src: url('../public/fonts/Gotham/Gotham-LightItalic.woff2') format('woff2'),
+      url('../public/fonts/Gotham/Gotham-LightItalic.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
 
+@font-face {
+  font-family: 'Gotham';
+  src: url('../public/fonts/Gotham/Gotham-Book.woff2') format('woff2'),
+      url('../public/fonts/Gotham/Gotham-Book.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('../public/fonts/Gotham/Gotham-Bold.woff2') format('woff2'),
+      url('../public/fonts/Gotham/Gotham-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('../public/fonts/Gotham/Gotham-BoldItalic.woff2') format('woff2'),
+      url('../public/fonts/Gotham/Gotham-BoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('../public/fonts/Gotham/Gotham-Light.woff2') format('woff2'),
+      url('../public/fonts/Gotham/Gotham-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('../public/fonts/Gotham/Gotham-BookItalic.woff2') format('woff2'),
+      url('../public/fonts/Gotham/Gotham-BookItalic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('../public/fonts/Gotham/Gotham-Medium.woff2') format('woff2'),
+      url('../public/fonts/Gotham/Gotham-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('../public/fonts/Gotham/Gotham-MediumItalic.woff2') format('woff2'),
+      url('../public/fonts/Gotham/Gotham-MediumItalic.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('../public/fonts/Gotham/Gotham-Medium.woff2') format('woff2'),
+      url('../public/fonts/Gotham/Gotham-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
 
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: Raleway, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Gotham', sans-serif;
   background-color: #232527;
   color: #fff;
 }

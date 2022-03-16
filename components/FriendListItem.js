@@ -11,7 +11,7 @@ export default function FriendListItem(props) {
 					className="rounded-full"
 				/>
 			</div>
-			<div className="font-bold text-xs mt-1">ROBLOX</div>
+			<div className="font-medium text-xs mt-1">ROBLOX</div>
 		</div>
 	)
 }

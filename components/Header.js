@@ -42,7 +42,7 @@ export default function Header() {
                         height={28}
                         className="rounded-full"
                     />
-                    <span className="text-sm font-semibold ml-1">
+                    <span className="text-xs font-medium ml-1">
                         @Zenternal
                     </span>
                     <span className="text-xs text-gray-300 ml-1">
@@ -51,7 +51,7 @@ export default function Header() {
                 </div>
                 <span className="icon-spritesheet icon-notification-stream mr-2"></span>
                 <span className="icon-spritesheet icon-robux"></span>
-                <span className="font-bold ml-1">202.1K</span>
+                <span className="font-medium ml-1 pt-1">202.1K</span>
                 <span className="icon-spritesheet icon-settings ml-3"></span>
             </div>
         </div>
