@@ -1,5 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Container from '../components/Container'
+import FriendListItem from '../components/FriendListItem'
 
 export default function Home() {
   return (
@@ -20,6 +22,26 @@ export default function Home() {
         
           <span className="text-3xl font-black pl-3">ollie</span>
         </div>
+      </div>
+
+      <div className="px-3">
+        <Container title="Friends (?)">
+          <div className="flex shrink-0 overflow-auto">
+            { /* 12 items */}
+            <FriendListItem />
+            <FriendListItem />
+            <FriendListItem />
+            <FriendListItem />
+            <FriendListItem />
+            <FriendListItem />
+            <FriendListItem />
+            <FriendListItem />
+            <FriendListItem />
+            <FriendListItem />
+            <FriendListItem />
+            <FriendListItem />
+          </div>
+        </Container>
       </div>
     </div>
   )

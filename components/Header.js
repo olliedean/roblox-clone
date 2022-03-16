@@ -9,7 +9,7 @@ export default function Header() {
     return (
         <div className="header flex px-3 items-center">
             <div className="flex-1 flex items-center">
-                <span className="icon-spritesheet icon-burger-menu"></span>
+                <span className="icon-spritesheet icon-burger-menu mr-3"></span>
                 <Image
                     src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMCIgaGVpZ2h0PSIzMCI+PHBhdGggZD0iTTguMyAzLjdMMy42IDIxLjhsMTguMSA0LjYgNC42LTE4LjEtMTgtNC42em04IDEzLjZsLTMuNS0uOS45LTMuNSAzLjUuOS0uOSAzLjV6IiBmaWxsPSIjZmZmIi8+PC9zdmc+"
                     width={30}
