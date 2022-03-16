@@ -24,13 +24,10 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="px-3">
+      <div className="px-3 max-w-5xl">
         <Container title="Friends (?)">
           <div className="flex shrink-0 overflow-auto">
-            { /* 12 items */}
-            <FriendListItem />
-            <FriendListItem />
-            <FriendListItem />
+            { /* 9 items */}
             <FriendListItem />
             <FriendListItem />
             <FriendListItem />
