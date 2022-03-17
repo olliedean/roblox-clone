@@ -10,7 +10,10 @@ export default function Header() {
         <div className="header flex px-3 items-center items-stretch">
             <div className="flex-1 flex items-stretch">
                 <div className="flex items-center">
-                    <span className="icon-spritesheet icon-burger-menu mr-3"></span>
+                    <a href="#" className="p-[2.5px] pr-[3px] rounded
+                    bg-white bg-opacity-0 hover:bg-opacity-20 flex mr-3">
+                        <span className="icon-spritesheet icon-burger-menu"></span>
+                    </a>
                     <Image
                         src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMCIgaGVpZ2h0PSIzMCI+PHBhdGggZD0iTTguMyAzLjdMMy42IDIxLjhsMTguMSA0LjYgNC42LTE4LjEtMTgtNC42em04IDEzLjZsLTMuNS0uOS45LTMuNSAzLjUuOS0uOSAzLjV6IiBmaWxsPSIjZmZmIi8+PC9zdmc+"
                         width={30}
@@ -52,10 +55,19 @@ export default function Header() {
                         13+
                     </span>
                 </div>
-                <span className="icon-spritesheet icon-notification-stream mr-2"></span>
-                <span className="icon-spritesheet icon-robux"></span>
-                <span className="font-medium ml-1 pt-1">202.1K</span>
-                <span className="icon-spritesheet icon-settings ml-3"></span>
+                <a href="#" className="p-[2.5px] pr-[3px] rounded-lg
+                bg-white bg-opacity-0 hover:bg-opacity-20 mr-2">
+                    <span className="icon-spritesheet icon-notification-stream"></span>
+                </a>
+                <a href="#" className="p-[2.5px] pr-[3px] rounded-lg
+                bg-white bg-opacity-0 hover:bg-opacity-20 flex items-center">
+                    <span className="icon-spritesheet icon-robux"></span>
+                    <span className="font-medium ml-1 pt-1">202.1K</span>
+                </a>
+                <a href="#" className="ml-3 p-[2.5px] pr-[3px] rounded
+                bg-white bg-opacity-0 hover:bg-opacity-20">
+                    <span className="icon-spritesheet icon-settings"></span>
+                </a>
             </div>
         </div>
     )
