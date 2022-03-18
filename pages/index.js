@@ -1,7 +1,6 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import Container from '../components/Container'
-import FriendListItem from '../components/FriendListItem'
+import Image from 'next/image';
+import Container from '../components/Container';
+import FriendListItem from '../components/FriendListItem';
 
 export default function Home() {
   return (
@@ -19,7 +18,7 @@ export default function Home() {
             width={28}
             height={28}
           />
-        
+
           <span className="text-3xl font-black pl-3">ollie</span>
         </div>
       </div>
@@ -41,5 +40,5 @@ export default function Home() {
         </Container>
       </div>
     </div>
-  )
+  );
 }

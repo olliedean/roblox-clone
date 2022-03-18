@@ -1,7 +1,8 @@
+/* eslint-disable react/jsx-props-no-spreading */
 import ChatMenu from '../components/ChatMenu';
-import Header from '../components/Header'
-import '../styles/globals.css'
-import "../styles/icons.css";
+import Header from '../components/Header';
+import '../styles/globals.css';
+import '../styles/icons.css';
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -10,7 +11,7 @@ function MyApp({ Component, pageProps }) {
       <Component {...pageProps} />
       <ChatMenu />
     </>
-  )
+  );
 }
 
-export default MyApp
+export default MyApp;
