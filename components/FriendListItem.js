@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function FriendListItem(props) {
+export default function FriendListItem() {
 	return (
 		<div className="flex flex-col text-center w-[90px] mr-5">
 			<div className="w-[90px] h-[90px]">

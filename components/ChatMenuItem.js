@@ -10,11 +10,12 @@ export default function ChatMenuItem() {
                         width={32}
                         height={32}
                         className="rounded-full"
+                        alt="avatar"
                     />
                 </div>
                 <div className="flex-1 min-w-0 pl-2">
                     <div className="font-bold">ROBLOX</div>
-                    <div className="overflow-hidden whitespace-nowrap">"Lorem ipsum dolor sit amet, consectetur</div>
+                    <div className="overflow-hidden whitespace-nowrap">Lorem ipsum dolor sit amet, consectetur</div>
                 </div>
                 <div className="flex items-end pl-10 text-right text-gray-400 font-medium">
                     Mar. 20
