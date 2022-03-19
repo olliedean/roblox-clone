@@ -23,7 +23,14 @@ export default function ChatMenu() {
         </div>
       </div>
       {isOpen && (
-        <div>
+        <div className="bg-[#393b3d]">
+          <span className="icon-spritesheet-3 icon-chat-search absolute mt-8 ml-2" />
+          <input
+            type="text"
+            placeholder="Search for friends"
+            className="bg-black placeholder:text-gray-500 w-full rounded-lg
+            text-xs py-2 pl-7"
+          />
           <ul>
             <ChatMenuItem />
           </ul>
