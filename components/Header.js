@@ -67,7 +67,7 @@ export default function Header() {
                 bg-white bg-opacity-0 hover:bg-opacity-20 flex items-center"
         >
           <span className="icon-spritesheet icon-robux" />
-          <span className="font-medium ml-1 pt-1">202.1K</span>
+          <span className="font-medium ml-1">202.1K</span>
         </a>
         <a
           href="/settings"
