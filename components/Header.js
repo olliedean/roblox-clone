@@ -8,6 +8,7 @@ export default function Header() {
     <div className="header flex px-3 items-center items-stretch">
       <div className="flex-1 flex items-stretch">
         <div className="flex items-center">
+          {/* OLD BURGER MENU
           <a
             href="/menu"
             className="p-[2.5px] pr-[3px] rounded
@@ -15,16 +16,17 @@ export default function Header() {
           >
             <span className="icon-spritesheet icon-burger-menu" />
           </a>
+          */}
           <Image
-            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMCIgaGVpZ2h0PSIzMCI+PHBhdGggZD0iTTguMyAzLjdMMy42IDIxLjhsMTguMSA0LjYgNC42LTE4LjEtMTgtNC42em04IDEzLjZsLTMuNS0uOS45LTMuNSAzLjUuOS0uOSAzLjV6IiBmaWxsPSIjZmZmIi8+PC9zdmc+"
-            width={30}
+            src="/roblox-logo-dark.svg"
+            width={118}
             height={30}
             className="ml-3"
           />
         </div>
         <div className="pl-3 flex">
           <NavItem>Discover</NavItem>
-          <NavItem>Avatar Shop</NavItem>
+          <NavItem>Marketplace</NavItem>
           <NavItem>Create</NavItem>
           <NavItem>Robux</NavItem>
         </div>
