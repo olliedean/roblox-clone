@@ -24,7 +24,7 @@ export default function Home() {
       </div>
 
       <div className="px-3 max-w-5xl">
-        <Container title="Friends (?)">
+        <Container title="Friends (?)" href="users/friends">
           <div className="flex shrink-0 overflow-auto">
             { /* 9 items */}
             <FriendListItem />
@@ -37,6 +37,10 @@ export default function Home() {
             <FriendListItem />
             <FriendListItem />
           </div>
+        </Container>
+
+        <Container title="Continue" titlehref href="games/continue">
+          hi
         </Container>
       </div>
     </div>
