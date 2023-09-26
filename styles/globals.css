@@ -101,6 +101,7 @@ body,
   background-color: #232527;
   color: #fff;
   height:100%;
+  overflow-x: hidden;
 }
 
 a {
@@ -116,4 +117,8 @@ a {
   background-color: #191b1d;
   border: solid #111214;
   border-width: 0 0 1px;
+}
+
+a:hover {
+  @apply underline;
 }

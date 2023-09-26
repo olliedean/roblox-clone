@@ -11,7 +11,7 @@ function MyApp({ Component, pageProps }) {
       <Header />
       <div className="flex">
         <Sidebar />
-        <div className="overflow-scroll h-[calc(100vh-42px)] flex-1">
+        <div className="overflow-y-auto overflow-x-hidden h-[calc(100vh-42px)] flex-1">
           <Component {...pageProps} />
         </div>
       </div>
