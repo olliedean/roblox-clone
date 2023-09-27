@@ -33,9 +33,9 @@ export default function Header() {
         <div className="ml-5 flex items-center">
           <FontAwesomeIcon icon={faSearch} className="absolute ml-2 text-slate-300" />
           <input
-            className="bg-black bg-opacity-50 pt-[2px] px-3 pl-9 font-semibold placeholder:text-gray-600
+            className="bg-black bg-opacity-50 pt-[2px] px-3 pl-9 font-light placeholder:text-gray-600
                             rounded-lg border-[1px] border-gray-700 focus:border-gray-800
-                            font-light w-96"
+                            w-96"
             type="text"
             placeholder="Search"
           />
