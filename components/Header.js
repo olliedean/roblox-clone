@@ -7,7 +7,7 @@ export default function Header() {
   return (
     <div className="header flex px-3 items-center items-stretch">
       <div className="flex-1 flex items-stretch">
-        <div className="flex items-center">
+        <div className="flex items-center ml-2">
           {/* OLD BURGER MENU
           <a
             href="/menu"
@@ -21,7 +21,6 @@ export default function Header() {
             src="/roblox-logo-dark.svg"
             width={118}
             height={30}
-            className="ml-3"
           />
         </div>
         <div className="pl-3 flex">

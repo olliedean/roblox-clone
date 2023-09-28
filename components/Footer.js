@@ -22,7 +22,7 @@ export default function Footer() {
           >
             <option>English</option>
           </select>
-          <div className=" text-[10px] font-medium text-gray-400">
+          <div className=" text-[10px] font-medium text-gray-400 ml-3">
             ©2023 Roblox Corporation.
             <br />
             This site is not affiliated or endorsed by Roblox Corporation.
