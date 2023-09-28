@@ -2,7 +2,7 @@ import FooterLink from './FooterLink';
 
 export default function Footer() {
   return (
-    <footer className="flex flex-col items-center justify-center w-full h-24 max-w-5xl mx-auto ">
+    <footer className="flex flex-col mt-12 items-center justify-center w-full h-24 max-w-5xl mx-auto ">
       <div className="flex flex-col">
         <div className="flex justify-between pb-8 border-b border-gray-500">
           <FooterLink href="/info/about-us">About Us</FooterLink>
