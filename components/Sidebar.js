@@ -1,4 +1,4 @@
-import SidebarItem from "./SidebarItem";
+import SidebarItem from './SidebarItem';
 
 export default function Sidebar() {
   return (
