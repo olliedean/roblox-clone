@@ -1,3 +1,6 @@
+import Tippy from '@tippyjs/react';
+import { roundArrow } from 'tippy.js';
+import 'tippy.js/dist/svg-arrow.css';
 import { NextSeo } from 'next-seo';
 import Link from 'next/link';
 
@@ -63,7 +66,14 @@ export default function UserProfile() {
         </div>
         <div className="flex text-sm pt-2">
           <span className="text-gray-400">
-            <div className="icon-spritesheet-4 icon-previous-usernames mr-1 opacity-50 hover:opacity-100" />
+            <Tippy
+              content="olliedean"
+              placement="bottom"
+              className="bg-neutral-900 px-3 py-1 text-sm text-gray-400"
+              arrow={roundArrow}
+            >
+              <div className="icon-spritesheet-4 icon-previous-usernames mr-1 opacity-50 hover:opacity-100" />
+            </Tippy>
             Previous usernames
           </span>
           <a

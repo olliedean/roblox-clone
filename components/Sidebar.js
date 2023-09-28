@@ -17,7 +17,7 @@ export default function Sidebar() {
             <div className="icon-spritesheet icon-nav-home mr-2" />
             Home
           </SidebarItem>
-          <SidebarItem href="/users/1/profile">
+          <SidebarItem href="/users/2/profile">
             <div className="icon-spritesheet icon-nav-profile mr-2" />
             Profile
           </SidebarItem>

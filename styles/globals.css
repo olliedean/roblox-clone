@@ -131,3 +131,7 @@ a:hover {
 .hover-about-boxshadow:hover {
   box-shadow: inset 0 -4px 0 0 #ffffff48;
 }
+
+.tippy-svg-arrow {
+  @apply fill-neutral-900 !important;
+}

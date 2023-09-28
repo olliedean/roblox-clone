@@ -17,11 +17,16 @@ export default function Header() {
             <span className="icon-spritesheet icon-burger-menu" />
           </a>
           */}
-          <Image
-            src="/roblox-logo-dark.svg"
-            width={118}
-            height={30}
-          />
+          <a
+            href="/"
+            className="flex items-center"
+          >
+            <Image
+              src="/roblox-logo-dark.svg"
+              width={118}
+              height={30}
+            />
+          </a>
         </div>
         <div className="pl-3 flex">
           <NavItem>Discover</NavItem>
