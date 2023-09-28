@@ -30,6 +30,11 @@
     background-position: 0 -180px;
 }
 
+.placeholder-outfit {
+    background-size: 100px auto;
+    background-position: 0 -300px;
+}
+
 .placeholder-game {
     background-size: 150px auto;
     background-position: 0 0;
