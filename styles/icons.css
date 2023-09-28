@@ -7,10 +7,22 @@
 }
 
 .icon-spritesheet-3 {
-    background-image: url('https://images.rbxcdn.com/0ff32c69af9262d7c9fefe8284d81d88-chat_dark.svg')
+    background-image: url('https://images.rbxcdn.com/0ff32c69af9262d7c9fefe8284d81d88-chat_dark.svg');
+}
+.icon-spritesheet-4 {
+    background-image: url('https://images.rbxcdn.com/a057a8bc94e7ab78517765ddb4e77384-generic_dark_11062018.svg');
 }
 .placeholder-spritesheet {
     background-image: url('/placeholder-spritesheet.svg');
+}
+
+.icon-premium-profile {
+    background-image: url('/premium-icon.svg');
+    width: 28px;
+    height: 28px;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    background-size: 28px auto;
 }
 
 .placeholder-avatar {
@@ -47,6 +59,15 @@
     width: 16px;
     height: 16px;
     display: inline-block;
+}
+
+.icon-previous-usernames {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    background-size: 40px auto;
+
 }
 
 .icon-chat-search {
@@ -144,4 +165,8 @@
 
 .icon-nav-giftcards {
     background-position: 0 -505px;
+}
+
+.icon-previous-usernames {
+    background-position: 0 -780px;
 }

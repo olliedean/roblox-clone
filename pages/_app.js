@@ -12,6 +12,7 @@ function MyApp({ Component, pageProps }) {
     <>
       <DefaultSeo
         titleTemplate="%s - Roblox"
+        defaultTitle="Roblox"
       />
       <Header />
       <div className="flex">
