@@ -13,7 +13,7 @@ export default function Sidebar() {
 
       <div className="flex flex-col mt-2">
         <ul className="flex flex-col">
-          <SidebarItem href="/home">
+          <SidebarItem href="/">
             <div className="icon-spritesheet icon-nav-home mr-2" />
             Home
           </SidebarItem>

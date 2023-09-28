@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Container from '../components/Container';
 import FriendListItem from '../components/FriendListItem';
 import HomeGameList from '../components/HomeGameList';
