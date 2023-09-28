@@ -1,4 +1,5 @@
 /* eslint-disable react/jsx-props-no-spreading */
+import { DefaultSeo } from 'next-seo';
 import ChatMenu from '../components/ChatMenu';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
@@ -9,6 +10,9 @@ import '../styles/icons.css';
 function MyApp({ Component, pageProps }) {
   return (
     <>
+      <DefaultSeo
+        titleTemplate="%s - Roblox"
+      />
       <Header />
       <div className="flex">
         <Sidebar />

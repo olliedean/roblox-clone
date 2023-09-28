@@ -1,3 +1,4 @@
+import { NextSeo } from 'next-seo';
 import Container from '../components/Container';
 import FriendListItem from '../components/FriendListItem';
 import HomeGameList from '../components/HomeGameList';
@@ -5,6 +6,10 @@ import HomeGameList from '../components/HomeGameList';
 export default function Home() {
   return (
     <div className="pl-16">
+      <NextSeo
+        title="Home"
+        description="Roblox is a global platform that brings people together through play."
+      />
       <div className="font-extrabold text-3xl mb-3 p-3">Home</div>
       <div className="px-3 max-w-5xl">
         <Container title="Friends (?)" href="users/friends">
