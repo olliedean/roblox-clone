@@ -43,7 +43,7 @@ export default function TransactionsPage() {
         </div>
         <button
           type="button"
-          className="ml-auto bg-green-600 p-2 rounded-lg font-medium"
+          className="ml-auto bg-emerald-500 p-2 rounded-lg font-medium"
         >
           Buy Robux
         </button>

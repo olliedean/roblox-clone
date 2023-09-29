@@ -19,7 +19,7 @@ export default function RobuxStoreComponent({ robux, cost }) {
       </div>
       <div>
         <button
-          className="bg-green-500 rounded-lg px-8 py-2 font-bold"
+          className="bg-emerald-500 rounded-lg px-8 py-2 font-bold"
           type="button"
         >
           <span className="icon-spritesheet-5 icon-robux" />

@@ -5,7 +5,7 @@ export default function ChatMenu() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="w-72 bottom-0 right-1 mr-1 bg-[#191b1d]
+    <div className="w-72 bottom-0 right-5 mr-1 bg-[#191b1d]
         absolute border-[1px] border-slate-700 border-b-0"
     >
       <div className="flex">
