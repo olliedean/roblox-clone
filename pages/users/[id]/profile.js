@@ -28,8 +28,8 @@ export default function UserProfile() {
           <div className="flex flex-col leading-tight ml-3">
             <div className="flex flex-grow-0 gap-2">
               <span className="text-[32px] font-extrabold">ollie</span>
-              {(isVerified && <div className="icon-verified-large mt-1" />)
-              || (isPremium && <div className="icon-premium-profile mt-1" />)}
+              {(isVerified && <span className="icon-verified-large mt-1" title="Verified Badge Icon" />)
+              || (isPremium && <span className="icon-premium-profile mt-1" title="Premium Badge Icon" />)}
             </div>
             <span className="text-gray-400 text-sm">
               @ollie
