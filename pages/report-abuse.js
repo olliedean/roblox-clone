@@ -47,7 +47,7 @@ export default function ReportAbusePage() {
               no asking for phone numbers or email addresses
             </li>
           </ul>
-          <a 
+          <a
             href="/info/blog/214"
             className="py-3 block font-medium"
           >
