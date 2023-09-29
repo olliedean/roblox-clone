@@ -113,6 +113,15 @@
     background-position: 0 0px;
 }
 
+.icon-robux-small {
+    background-position: 0 0px;
+    width: 16px;
+    height: 16px;
+    background-size: 32px auto;
+    display: inline-block;
+    vertical-align: middle;
+}
+
 .icon-settings {
     background-position: 0 -84px;
 }

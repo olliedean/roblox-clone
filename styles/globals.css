@@ -152,7 +152,7 @@ a:hover {
   -webkit-transform: rotate(8deg);
 }
 
-#tippy-1 {
+[data-tippy-root] {
   @apply pointer-events-auto !important;
 }
 
@@ -162,4 +162,8 @@ a:hover {
 
 .settings-menu-item {
   @apply block px-4 py-2 bg-white bg-opacity-0 hover:no-underline hover:bg-opacity-20 hover:text-white;
+}
+
+select option {
+  @apply appearance-none bg-neutral-500 p-5;
 }
