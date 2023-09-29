@@ -84,12 +84,13 @@ export default function UserProfile() {
             </Tippy>
             Previous usernames
           </span>
-          <a
-            className="ml-auto text-red-500 font-medium"
-            href="/report-abuse/?userId=1"
-          >
-            Report Abuse
-          </a>
+          <Link href="/report-abuse/?userId=1">
+            <a
+              className="ml-auto text-red-500 font-medium"
+            >
+              Report Abuse
+            </a>
+          </Link>
         </div>
       </div>
 

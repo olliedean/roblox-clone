@@ -10,7 +10,7 @@ export default function Home() {
         title="Home"
         description="Roblox is a global platform that brings people together through play."
       />
-      <div className="font-extrabold text-3xl mb-3 p-3">Home</div>
+      <div className="font-black text-3xl mb-3 p-3">Home</div>
       <div className="px-3 max-w-5xl">
         <Container title="Friends (?)" href="users/friends">
           <div className="flex shrink-0 overflow-auto">
