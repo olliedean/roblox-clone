@@ -3,8 +3,10 @@ import { roundArrow } from 'tippy.js';
 import 'tippy.js/dist/svg-arrow.css';
 import { NextSeo } from 'next-seo';
 import Link from 'next/link';
-import ProfileAvatarItem from '../../../components/ProfileAvatarItem';
 import { useState } from 'react';
+import ProfileAvatarItem from '../../../components/ProfileAvatarItem';
+import FriendListItem from '../../../components/FriendListItem';
+import Container from '../../../components/Container';
 
 export default function UserProfile() {
   const [avatarPreviewMode, setAvatarPreviewMode] = useState('3D');
@@ -119,6 +121,23 @@ export default function UserProfile() {
             </div>
           </div>
         </div>
+      </div>
+
+      <div className="mt-4">
+        <Container title="Friends (?)" href="users/2/friends">
+          <div className="flex shrink-0 overflow-auto">
+            { /* 9 items */}
+            <FriendListItem />
+            <FriendListItem />
+            <FriendListItem />
+            <FriendListItem />
+            <FriendListItem />
+            <FriendListItem />
+            <FriendListItem />
+            <FriendListItem />
+            <FriendListItem />
+          </div>
+        </Container>
       </div>
     </div>
   );
