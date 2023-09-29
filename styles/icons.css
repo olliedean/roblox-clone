@@ -12,6 +12,9 @@
 .icon-spritesheet-4 {
     background-image: url('https://images.rbxcdn.com/a057a8bc94e7ab78517765ddb4e77384-generic_dark_11062018.svg');
 }
+.icon-spritesheet-5 {
+    background-image: url('https://images.rbxcdn.com/3a9b44283e65ae1ead90defcb0bdcb6e-economy_28x28_dark.svg');
+}
 .placeholder-spritesheet {
     background-image: url('/placeholder-spritesheet.svg');
 }
@@ -23,6 +26,16 @@
     background-repeat: no-repeat;
     vertical-align: middle;
     background-size: 28px auto;
+}
+
+.icon-premium-small {
+    background-image: url('/premium-icon.svg');
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    background-size: 16px auto;
 }
 
 .placeholder-avatar {
@@ -97,7 +110,7 @@
 }
 
 .icon-robux {
-    background-position: 0 -28px;
+    background-position: 0 0px;
 }
 
 .icon-settings {

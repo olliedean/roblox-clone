@@ -54,8 +54,7 @@ export default function UserProfile() {
 
       <div className="section mt-4 grid grid-cols-2 text-center font-medium">
         <div
-          className="p-2"
-          style={{ boxShadow: 'inset 0 -4px 0 0 #fff;' }} /* active */
+          className="p-2 about-boxshadow"
         >
           About
         </div>

@@ -1,12 +1,15 @@
+/* eslint-disable react/no-danger */
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Image from 'next/image';
-import NavItem from './NavItem';
 import Link from 'next/link';
+import Tippy from '@tippyjs/react';
+import 'tippy.js/dist/tippy.css';
+import NavItem from './NavItem';
 
 export default function Header() {
   return (
-    <div className="header flex px-3 items-center items-stretch">
+    <div className="header flex px-3 items-stretch">
       <div className="flex-1 flex items-stretch">
         <div className="flex items-center ml-2">
           {/* OLD BURGER MENU
@@ -34,7 +37,7 @@ export default function Header() {
           <NavItem>Discover</NavItem>
           <NavItem>Marketplace</NavItem>
           <NavItem>Create</NavItem>
-          <NavItem>Robux</NavItem>
+          <NavItem href="/upgrades/robux">Robux</NavItem>
         </div>
         <div className="ml-5 flex items-center">
           <FontAwesomeIcon icon={faSearch} className="absolute ml-2 text-slate-300" />
@@ -66,29 +69,99 @@ export default function Header() {
             13+
           </span>
         </div>
-        <a
-          href="/notifications"
-          className="p-[2.5px] pr-[3px] rounded-lg
-                bg-white bg-opacity-0 hover:bg-opacity-20 mr-2"
+        <Tippy
+          trigger="click"
+          className="p-0 mr-4 text-neutral-400 bg-neutral-900 text-lg h-96 w-[400px] flex flex-col"
+          content={(
+            <div dangerouslySetInnerHTML={{
+              __html: `
+              <div class="flex flex-col h-96">
+                <div class="flex text-xs p-3 bg-neutral-900">
+                  <span class="flex-1">Notifications</span>
+                  <a href="/my/account#/notifications" class="text-white">Settings</a>
+                </div>
+                <div class="p-3 bg-black bg-opacity-30 flex-grow">
+                  ${/* notifications */+`
+                </div>
+              </div>
+              `}`,
+            }}
+            />
+          )}
         >
-          <span className="icon-spritesheet icon-notification-stream" />
-        </a>
-        <a
-          href="/robux"
-          className="p-[2.5px] pr-[3px] rounded-lg hover:no-underline
+          <a
+            className="p-[2.5px] pr-[3px] rounded-lg
+                  bg-white bg-opacity-0 hover:bg-opacity-20 mr-2"
+          >
+            <span className="icon-spritesheet icon-notification-stream" />
+          </a>
+        </Tippy>
+        <Tippy
+          trigger="click"
+          className="p-0 mr-4 text-neutral-400 bg-neutral-700 font-medium text-lg"
+          content={(
+            <div dangerouslySetInnerHTML={{
+              __html: `
+              <a href="/upgrades/robux" class="settings-menu-item">
+                Buy Robux
+              </a>
+              <a href="/my/transactions" class="settings-menu-item">
+                My Transactions
+              </a>
+              <a href="/redeem" class="settings-menu-item">
+                Redeem Roblox Codes
+              </a>
+              `,
+            }}
+            />
+          )}
+        >
+          <a
+            className="p-[2.5px] pr-[3px] rounded-lg hover:no-underline
                 bg-white bg-opacity-0 hover:bg-opacity-20 flex items-center"
+          >
+            <span className="icon-spritesheet-5 icon-robux" />
+            <span className="font-medium ml-1">202.1K</span>
+          </a>
+        </Tippy>
+        <Tippy
+          trigger="click"
+          className="p-0 mr-4 text-neutral-400 bg-neutral-700 font-medium text-lg"
+          content={(
+            <div dangerouslySetInnerHTML={{
+              __html: `
+              <a href="/my/account" class="settings-menu-item">
+                Settings
+              </a>
+              <a href="/crossdevicelogin/ConfirmCode" class="settings-menu-item">
+                Quick Log In
+              </a>
+              <a href="/info/help" class="settings-menu-item">
+                Help
+              </a>
+              <a href="/logout" class="settings-menu-item">
+                Logout
+              </a>
+            `,
+            }}
+            />
+          )}
         >
-          <span className="icon-spritesheet icon-robux" />
-          <span className="font-medium ml-1">202.1K</span>
-        </a>
-        <a
-          href="/settings"
-          className="ml-3 p-[2.5px] pr-[3px] rounded
+          <a
+            className="ml-3 p-[2.5px] pr-[3px] rounded
                 bg-white bg-opacity-0 hover:bg-opacity-20"
-        >
-          <span className="icon-spritesheet icon-settings" />
-        </a>
+          >
+            <span className="icon-spritesheet icon-settings" />
+          </a>
+        </Tippy>
       </div>
+      <style jsx>
+        {`
+          .tippy-content {
+            @apply p-0;
+          }
+        `}
+      </style>
     </div>
   );
 }

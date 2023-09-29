@@ -132,6 +132,34 @@ a:hover {
   box-shadow: inset 0 -4px 0 0 #ffffff48;
 }
 
+.about-boxshadow {
+  box-shadow: inset 0 -4px 0 0 #fff;
+}
+
 .tippy-svg-arrow {
   @apply fill-neutral-900 !important;
+}
+
+.oblique-strikethrough:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  right: 0;
+  top: 50%;
+  border-top: 2.5px solid;
+  @apply border-neutral-400;
+  transform: rotate(8deg);
+  -webkit-transform: rotate(8deg);
+}
+
+#tippy-1 {
+  @apply pointer-events-auto !important;
+}
+
+.tippy-content {
+  @apply p-0 !important;
+}
+
+.settings-menu-item {
+  @apply block px-4 py-2 bg-white bg-opacity-0 hover:no-underline hover:bg-opacity-20 hover:text-white;
 }
