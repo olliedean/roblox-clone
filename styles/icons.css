@@ -19,6 +19,15 @@
     background-image: url('/placeholder-spritesheet.svg');
 }
 
+.icon-verified-large {
+    background-image: url('/verified-icon.svg');
+    width: 28px;
+    height: 28px;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    background-size: 28px auto;
+}
+
 .icon-premium-profile {
     background-image: url('/premium-icon.svg');
     width: 28px;

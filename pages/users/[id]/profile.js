@@ -10,6 +10,9 @@ import Container from '../../../components/Container';
 
 export default function UserProfile() {
   const [avatarPreviewMode, setAvatarPreviewMode] = useState('3D');
+  const isPremium = true;
+  const isVerified = true;
+
   return (
     <div className="max-w-5xl mx-auto mt-4">
       <NextSeo
@@ -23,9 +26,10 @@ export default function UserProfile() {
             style={{ backgroundSize: '128px', backgroundPosition: '0 256px' }}
           />
           <div className="flex flex-col leading-tight ml-3">
-            <div className="flex flex-grow-0">
-              <span className="text-[32px] font-extrabold mr-2">ollie</span>
-              <div className="icon-premium-profile mt-1" />
+            <div className="flex flex-grow-0 gap-2">
+              <span className="text-[32px] font-extrabold">ollie</span>
+              {(isVerified && <div className="icon-verified-large mt-1" />)
+              || (isPremium && <div className="icon-premium-profile mt-1" />)}
             </div>
             <span className="text-gray-400 text-sm">
               @ollie
@@ -135,6 +139,24 @@ export default function UserProfile() {
             <FriendListItem />
             <FriendListItem />
             <FriendListItem />
+          </div>
+        </Container>
+      </div>
+
+      <div className="mt-4">
+        <Container
+          title="Statistics"
+          noSeeAll
+        >
+          <div className="bg-neutral-700 w-full p-3 flex">
+            <div className="flex flex-col flex-1 text-center">
+              <span className="text-gray-400 font-medium">Join Date</span>
+              <span className="text-white font-bold">04/03/2002</span>
+            </div>
+            <div className="flex flex-col flex-1 text-center">
+              <span className="text-gray-400 font-medium">Place Visits</span>
+              <span className="text-white font-bold">0</span>
+            </div>
           </div>
         </Container>
       </div>

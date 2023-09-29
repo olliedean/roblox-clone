@@ -9,7 +9,7 @@ export default function ChatMenu() {
         absolute border-[1px] border-slate-700 border-b-0"
     >
       <div className="flex">
-        <div className="flex-1 pointer" aria-hidden="true" onClick={() => setIsOpen(!isOpen)}>
+        <div className="flex-1 cursor-pointer" aria-hidden="true" onClick={() => setIsOpen(!isOpen)}>
           <div className="text-xs p-2 font-bold">
             Chat
           </div>

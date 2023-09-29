@@ -16,14 +16,14 @@ export default function Custom404() {
               <div>
                 <button
                   className="bg-white text-gray-700 p-1
-                                    font-semibold px-6 rounded-lg text-lg"
+                                    font-medium px-6 rounded-lg text-lg"
                   type="button"
                 >
                   Back
                 </button>
                 <button
                   className="bg-opacity-0 text-slate-300 p-1
-                                    font-semibold px-6 rounded-lg text-lg
+                                    font-medium px-6 rounded-lg text-lg
                                     border-[1px] border-slate-300 ml-3"
                   type="button"
                 >
