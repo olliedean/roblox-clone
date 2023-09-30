@@ -5,9 +5,17 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css';
+import { useState } from 'react';
 import NavItem from './NavItem';
 
 export default function Header() {
+  const [searchMenuOpen, setSearchMenuOpen] = useState(false);
+  const [searchValue, setSearchValue] = useState('');
+
+  function getSanitizedSearchValue() {
+    return searchValue.replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  }
+
   return (
     <div className="header flex px-3 items-stretch">
       <div className="flex-1 flex items-stretch">
@@ -39,17 +47,63 @@ export default function Header() {
           <NavItem>Create</NavItem>
           <NavItem href="/upgrades/robux">Robux</NavItem>
         </div>
+
         <div className="ml-5 flex items-center">
           <FontAwesomeIcon icon={faSearch} className="absolute ml-2 text-slate-300" />
-          <input
-            className="bg-black bg-opacity-50 pt-[2px] px-3 pl-9 font-light placeholder:text-gray-600
-                            rounded-lg border-[1px] border-gray-700 focus:border-gray-800
-                            w-96"
-            type="text"
-            placeholder="Search"
-          />
+          <Tippy
+            visible={searchMenuOpen}
+            onClickOutside={() => setSearchMenuOpen(false)}
+            placement="bottom"
+            className="w-[385px] !max-w-none bg-neutral-800"
+            content={(
+              <div dangerouslySetInnerHTML={{
+                __html: `
+                <div class="flex flex-col w-full text-neutral-400 font-medium">
+                  <a href="/search/users?keyword=olliedean" class="search-menu-item p-4 border-b-[1px] border-neutral-600">
+                    <span class=" text-white">${getSanitizedSearchValue()}</span>
+                    <span> in People</span>
+                  </a>
+                  <a href="/search/users?keyword=olliedean" class="search-menu-item p-4 border-b-[1px] border-neutral-600">
+                    <span class=" text-white">${getSanitizedSearchValue()}</span>
+                    <span> in Experiences</span>
+                  </a>
+                  <a href="/search/users?keyword=olliedean" class="search-menu-item p-4 border-b-[1px] border-neutral-600">
+                    <span class=" text-white">${getSanitizedSearchValue()}</span>
+                    <span> in Marketplace</span>
+                  </a>
+                  <a href="/search/users?keyword=olliedean" class="search-menu-item p-4 border-b-[1px] border-neutral-600">
+                    <span class=" text-white">${getSanitizedSearchValue()}</span>
+                    <span> in Groups</span>
+                  </a>
+                  <a href="/search/users?keyword=olliedean" class="search-menu-item p-4">
+                    <span class=" text-white">${getSanitizedSearchValue()}</span>
+                    <span> in Creator Marketplace</span>
+                  </a>
+                </div>
+                `,
+              }}
+              />
+            )}
+          >
+            <input
+              className="bg-black bg-opacity-50 pt-[2px] px-3 pl-9 font-light placeholder:text-gray-600
+                              rounded-lg border-[1px] border-gray-700 focus:border-gray-800
+                              w-96"
+              onInput={(e) => {
+                if (e.target.value.length > 0) {
+                  setSearchMenuOpen(true);
+                } else {
+                  setSearchMenuOpen(false);
+                }
+                setSearchValue(e.target.value);
+              }}
+              type="text"
+              placeholder="Search"
+            />
+          </Tippy>
         </div>
       </div>
+
       <div className="flex items-center py-1">
         <div className="flex items-center mr-3">
           <Link href="/users/2/profile">

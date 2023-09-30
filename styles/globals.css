@@ -104,6 +104,7 @@ a:hover {
 
 [data-tippy-root] {
   @apply pointer-events-auto !important;
+  @apply max-w-none !important;
 }
 
 .tippy-content {
