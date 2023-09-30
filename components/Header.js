@@ -97,6 +97,13 @@ export default function Header() {
                 }
                 setSearchValue(e.target.value);
               }}
+              onClick={(e) => {
+                if (e.target.value.length > 0) {
+                  setSearchMenuOpen(true);
+                } else {
+                  setSearchMenuOpen(false);
+                }
+              }}
               type="text"
               placeholder="Search"
             />
