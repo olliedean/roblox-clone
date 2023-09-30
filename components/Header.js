@@ -90,20 +90,10 @@ export default function Header() {
                               rounded-lg border-[1px] border-gray-700 focus:border-gray-800
                               w-96"
               onInput={(e) => {
-                if (e.target.value.length > 0) {
-                  setSearchMenuOpen(true);
-                } else {
-                  setSearchMenuOpen(false);
-                }
+                setSearchMenuOpen(e.target.value.length > 0);
                 setSearchValue(e.target.value);
               }}
-              onClick={(e) => {
-                if (e.target.value.length > 0) {
-                  setSearchMenuOpen(true);
-                } else {
-                  setSearchMenuOpen(false);
-                }
-              }}
+              onClick={(e) => { setSearchMenuOpen(e.target.value.length > 0); }}
               type="text"
               placeholder="Search"
             />
