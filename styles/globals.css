@@ -115,6 +115,10 @@ a:hover {
   @apply block px-4 py-2 bg-white bg-opacity-0 hover:no-underline hover:bg-opacity-20 hover:text-white;
 }
 
+.search-menu-item {
+  @apply bg-white bg-opacity-0 hover:no-underline hover:bg-opacity-10;
+}
+
 select option {
   @apply appearance-none bg-neutral-500 p-5;
 }

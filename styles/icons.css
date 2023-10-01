@@ -15,6 +15,9 @@
 .icon-spritesheet-5 {
     background-image: url('https://images.rbxcdn.com/3a9b44283e65ae1ead90defcb0bdcb6e-economy_28x28_dark.svg');
 }
+.icon-spritesheet-6 {
+    background-image: url('https://images.rbxcdn.com/fd9348442358becfb95f2a4b141c75a0-menu_dark.svg');
+}
 .placeholder-spritesheet {
     background-image: url('/placeholder-spritesheet.svg');
 }
@@ -205,4 +208,35 @@
 
 .icon-previous-usernames {
     background-position: 0 -780px;
+}
+
+/* user, play, shopping, userS, library */
+
+.icon-search-user, .icon-search-play, .icon-search-shopping, .icon-search-users, .icon-search-library {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    background-size: 32px auto;
+}
+
+.icon-search-user {
+    background-position: 0 -288px;
+}
+
+.icon-search-shopping {
+    background-position: 0 -304px;
+}
+
+.icon-search-library {
+    background-position: 0 -352px;
+}
+
+.icon-search-play {
+    background-position: 0 -128px;
+}
+
+.icon-search-users {
+    background-position: 0 -176px;
 }

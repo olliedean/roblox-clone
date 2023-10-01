@@ -60,22 +60,27 @@ export default function Header() {
                 __html: `
                 <div class="flex flex-col w-full text-neutral-400 font-medium">
                   <a href="/search/users?keyword=olliedean" class="search-menu-item p-4 border-b-[1px] border-neutral-600">
+                    <span class="icon-spritesheet-6 icon-search-user mr-1"></span>
                     <span class=" text-white">${getSanitizedSearchValue()}</span>
                     <span> in People</span>
                   </a>
                   <a href="/search/users?keyword=olliedean" class="search-menu-item p-4 border-b-[1px] border-neutral-600">
+                    <span class="icon-spritesheet-6 icon-search-play mr-1"></span>
                     <span class=" text-white">${getSanitizedSearchValue()}</span>
                     <span> in Experiences</span>
                   </a>
                   <a href="/search/users?keyword=olliedean" class="search-menu-item p-4 border-b-[1px] border-neutral-600">
+                    <span class="icon-spritesheet-6 icon-search-shopping mr-1"></span>
                     <span class=" text-white">${getSanitizedSearchValue()}</span>
                     <span> in Marketplace</span>
                   </a>
                   <a href="/search/users?keyword=olliedean" class="search-menu-item p-4 border-b-[1px] border-neutral-600">
+                    <span class="icon-spritesheet-6 icon-search-users mr-1"></span>
                     <span class=" text-white">${getSanitizedSearchValue()}</span>
                     <span> in Groups</span>
                   </a>
                   <a href="/search/users?keyword=olliedean" class="search-menu-item p-4">
+                    <span class="icon-spritesheet-6 icon-search-library mr-1"></span>
                     <span class=" text-white">${getSanitizedSearchValue()}</span>
                     <span> in Creator Marketplace</span>
                   </a>
