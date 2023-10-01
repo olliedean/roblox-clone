@@ -4,12 +4,15 @@ import 'tippy.js/dist/svg-arrow.css';
 import { NextSeo } from 'next-seo';
 import Link from 'next/link';
 import { useState } from 'react';
+import { useRouter } from 'next/router';
 import ProfileAvatarItem from '../../../components/ProfileAvatarItem';
 import FriendListItem from '../../../components/FriendListItem';
 import Container from '../../../components/Container';
+import ProfileGroupCarousel from '../../../components/ProfileGroupCarousel';
 
 export default function UserProfile() {
   const [avatarPreviewMode, setAvatarPreviewMode] = useState('3D');
+  const { id } = useRouter().query;
   const isPremium = true;
   const isVerified = true;
 
@@ -36,17 +39,17 @@ export default function UserProfile() {
             </span>
 
             <div className="mt-auto font-medium flex flex-row">
-              <Link href="/users/1/friends">
+              <Link href={`/users/${id}/friends`}>
                 902
               </Link>
               {' '}
               <span className="text-sm font-normal text-gray-400 mr-3 ml-1">Friends</span>
-              <Link href="/users/1/friends/followers">
+              <Link href={`/users/${id}/friends/followers`}>
                 1.5M
               </Link>
               {' '}
               <span className="text-sm font-normal text-gray-400 mr-3 ml-1">Followers</span>
-              <Link href="/users/1/friends/following">
+              <Link href={`/users/${id}/friends/following`}>
                 106
               </Link>
               {' '}
@@ -84,7 +87,7 @@ export default function UserProfile() {
             </Tippy>
             Previous usernames
           </span>
-          <Link href="/report-abuse/?userId=1">
+          <Link href={`/report-abuse/?userId=${id}`}>
             <a
               className="ml-auto text-red-500 font-medium"
             >
@@ -128,7 +131,7 @@ export default function UserProfile() {
       </div>
 
       <div className="mt-4">
-        <Container title="Friends (?)" href="users/2/friends">
+        <Container title="Friends (?)" href={`/users/${id}/friends`}>
           <div className="flex shrink-0 overflow-auto">
             { /* 9 items */}
             <FriendListItem />
@@ -141,6 +144,13 @@ export default function UserProfile() {
             <FriendListItem />
             <FriendListItem />
           </div>
+        </Container>
+      </div>
+
+      <div className="mt-2">
+        <Container title="Groups" noSeeAll>
+          { /* ^^ code custom right content (to replace see all). refer to roblox to understand */}
+          <ProfileGroupCarousel />
         </Container>
       </div>
 
