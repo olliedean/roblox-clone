@@ -1,6 +1,12 @@
+import { NextSeo } from 'next-seo';
+
 export default function GamePage() {
   return (
     <div className="max-w-5xl ml-56 mt-5">
+      <NextSeo
+        title="MIC UP 🔊"
+        description="MIC UP 🔊 is one of the millions creating and exploring the endless possibilities of Roblox. Join MIC UP 🔊 on Roblox and explore together!"
+      />
       <div className="flex">
         <div className="w-[640px] h-[360px] bg-neutral-600" />
         <div className="ml-5 flex flex-col flex-grow">
