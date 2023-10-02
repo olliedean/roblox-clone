@@ -40,6 +40,16 @@
     background-size: 28px auto;
 }
 
+.icon-verified-small {
+    background-image: url('/verified-icon.svg');
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    background-size: 16px auto;
+}
+
 .icon-premium-small {
     background-image: url('/premium-icon.svg');
     display: inline-block;
