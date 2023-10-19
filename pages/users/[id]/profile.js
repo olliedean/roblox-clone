@@ -9,6 +9,8 @@ import ProfileAvatarItem from '../../../components/ProfileAvatarItem';
 import FriendListItem from '../../../components/FriendListItem';
 import Container from '../../../components/Container';
 import ProfileGroupCarousel from '../../../components/ProfileGroupCarousel';
+import HomeGameList from '../../../components/HomeGameList';
+import RobloxBadge from '../../../components/Profile/RobloxBadge';
 
 export default function UserProfile() {
   const [avatarPreviewMode, setAvatarPreviewMode] = useState('3D');
@@ -151,6 +153,38 @@ export default function UserProfile() {
         <Container title="Groups" noSeeAll>
           { /* ^^ code custom right content (to replace see all). refer to roblox to understand */}
           <ProfileGroupCarousel />
+        </Container>
+      </div>
+
+      <div className="mt-3">
+        <Container title="Favourites" href="favourites">
+          <HomeGameList />
+        </Container>
+      </div>
+
+      <div className="mt-3">
+        <Container title="Roblox Badges" noSeeAll>
+          <div className="grid grid-cols-6 gap-3 w-full">
+            <RobloxBadge />
+            <RobloxBadge />
+            <RobloxBadge />
+            <RobloxBadge />
+            <RobloxBadge />
+            <RobloxBadge />
+          </div>
+        </Container>
+      </div>
+
+      <div className="mt-3">
+        <Container title="Badges" noSeeAll>
+          <div className="grid grid-cols-6 gap-3 w-full">
+            <RobloxBadge />
+            <RobloxBadge />
+            <RobloxBadge />
+            <RobloxBadge />
+            <RobloxBadge />
+            <RobloxBadge />
+          </div>
         </Container>
       </div>
 

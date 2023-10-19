@@ -21,6 +21,9 @@
 .placeholder-spritesheet {
     background-image: url('/placeholder-spritesheet.svg');
 }
+.badge-spritesheet {
+    background-image: url(https://images.rbxcdn.com/2a85da8fd52855683c2b039c8536ef56-badges.svg);
+}
 
 .icon-verified-large {
     background-image: url('/verified-icon.svg');
@@ -92,6 +95,19 @@
     background-repeat: no-repeat;
     vertical-align: middle;
     background-size: 56px auto;
+}
+
+.icon-badge-administrator {
+    background-repeat: no-repeat;
+    background-size: 280px auto;
+    width: 140px;
+    height: 140px;
+    display: inline-block;
+    vertical-align: middle
+}
+
+.icon-badge-administrator {
+    background-position: -140px -840px
 }
 
 .icon-thumbs-up, .icon-user-play {
