@@ -29,7 +29,7 @@ export default function Header() {
             <span className="icon-spritesheet icon-burger-menu" />
           </a>
           */}
-          <Link href="/" className="flex items-center">
+          <Link href="/home" className="flex items-center">
             <Image
               src="/roblox-logo-dark.svg"
               width={118}
