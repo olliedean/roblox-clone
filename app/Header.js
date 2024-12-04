@@ -38,9 +38,9 @@ export default function Header() {
           </Link>
         </div>
         <div className="pl-3 flex">
-          <NavItem>Discover</NavItem>
-          <NavItem>Marketplace</NavItem>
-          <NavItem>Create</NavItem>
+          <NavItem href="/chart">Charts</NavItem>
+          <NavItem href="/catalog">Marketplace</NavItem>
+          <NavItem href="/404">Create</NavItem>
           <NavItem href="/upgrades/robux">Robux</NavItem>
         </div>
 
