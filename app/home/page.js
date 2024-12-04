@@ -2,6 +2,10 @@ import FriendListItem from "../_items/FriendsListItem";
 import HomeGameList from "../_items/HomeGameList";
 import Container from "../Container";
 
+export const metadata = {
+  title: "Home",
+}
+
 export default function Home() {
   return (
     <div className="pl-16">

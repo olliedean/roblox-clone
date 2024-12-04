@@ -1,3 +1,7 @@
+export const metadata = {
+  title: "My Transactions",
+}
+
 export default function TransactionsPage() {
   return (
     <div className="mt-4 max-w-7xl mx-auto">

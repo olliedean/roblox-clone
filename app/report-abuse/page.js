@@ -1,3 +1,7 @@
+export const metadata = {
+  title: "Report Abuse",
+}
+
 export default function ReportAbusePage() {
   return (
     <div className="mt-5 mx-auto max-w-5xl">

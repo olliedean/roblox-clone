@@ -1,5 +1,9 @@
 import RobuxStoreComponent from "./RobuxStoreComponent";
 
+export const metadata = {
+  title: "Buy Robux",
+}
+
 export default function RobuxPage() {
   return (
     <div className="max-w-5xl mx-auto">
