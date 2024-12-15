@@ -4,7 +4,7 @@ import Footer from "./Footer";
 import GlobalAlert from "./GlobalAlert";
 import "./globals.css";
 import "./icons.css";
-import Header from "./Header";
+import Header from "./Header/Header";
 import Sidebar from "./_sidebar/Sidebar";
 
 import { config } from '@fortawesome/fontawesome-svg-core'

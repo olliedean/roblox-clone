@@ -15,12 +15,16 @@
     "@neondatabase/serverless": "^0.10.4",
     "@prisma/client": "^6.0.1",
     "@tippyjs/react": "^4.2.6",
-    "bcrypt": "^5.1.1",
+    "aws-sdk": "^2.1692.0",
+    "bcryptjs": "^2.4.3",
+    "mock-aws-s3": "^4.0.2",
     "next": "15.0.3",
     "next-auth": "^5.0.0-beta.25",
+    "nock": "^13.5.6",
     "prisma": "^6.0.1",
     "react": "19.0.0-rc-66855b96-20241106",
-    "react-dom": "19.0.0-rc-66855b96-20241106"
+    "react-dom": "19.0.0-rc-66855b96-20241106",
+    "zod": "^3.24.1"
   },
   "devDependencies": {
     "eslint": "^8",

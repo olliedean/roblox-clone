@@ -3,7 +3,7 @@ import { authConfig } from "./auth.config";
 import Credentials from "next-auth/providers/credentials";
 import { z } from "zod";
 import { neon } from "@neondatabase/serverless";
-import bcrypt from 'bcrypt';
+import bcrypt from 'bcryptjs';
 
 async function getUser (username) {
     try {
@@ -16,7 +16,7 @@ async function getUser (username) {
     }
 }
 
-export const { auth, signIn, signOut } = NextAuth({
+export const { handlers, auth, signIn, signOut } = NextAuth({
     ...authConfig,
     providers: [Credentials({
         async authorize(credentials) {
