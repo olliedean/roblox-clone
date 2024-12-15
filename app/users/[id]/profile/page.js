@@ -12,7 +12,7 @@ import RobloxBadge from './RobloxBadge';
 import Container from '@/app/Container';
 import HomeGameList from '@/app/_items/HomeGameList';
 
-function generateStaticParams() {
+export function generateStaticParams() {
   return {
     id: '1',
   };

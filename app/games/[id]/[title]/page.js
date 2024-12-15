@@ -6,7 +6,7 @@ export const metadata = {
   title: "MIC UP 🔊",
 }
 
-function generateStaticParams() {
+export function generateStaticParams() {
   return {
     id: '1',
   };
