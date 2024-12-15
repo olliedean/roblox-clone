@@ -1,18 +1,18 @@
 import Link from "next/link";
 import GameTabs from "./Tabs";
+import React from "react";
 
 
 export const metadata = {
   title: "MIC UP 🔊",
 }
 
-export function generateStaticParams() {
-  return {
-    id: '1',
-  };
+export async function generateStaticParams() {
+  return Array.from(Array(20).keys()).map((value) => ({variable: value}));
 }
 
-export default function GamePage() {
+export default async function GamePage({ params }) {
+  const { id } = await params;
   return (
     <div className="max-w-5xl ml-56 mt-5">
       <div className="flex">
