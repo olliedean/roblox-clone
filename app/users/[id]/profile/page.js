@@ -12,7 +12,6 @@ import RobloxBadge from './RobloxBadge';
 import Container from '@/app/Container';
 import HomeGameList from '@/app/_items/HomeGameList';
 
-// generateStaticParams(), but we only need it to build properly
 function generateStaticParams() {
   return {
     id: '1',

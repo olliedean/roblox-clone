@@ -5,6 +5,13 @@ import GameTabs from "./Tabs";
 export const metadata = {
   title: "MIC UP 🔊",
 }
+
+function generateStaticParams() {
+  return {
+    id: '1',
+  };
+}
+
 export default function GamePage() {
   return (
     <div className="max-w-5xl ml-56 mt-5">
