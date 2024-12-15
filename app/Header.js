@@ -7,10 +7,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import Tippy from "@tippyjs/react";
 import Image from "next/image";
+import { useSession } from "next-auth/react";
 
 export default function Header() {
   const [searchMenuOpen, setSearchMenuOpen] = useState(false);
   const [searchValue, setSearchValue] = useState("");
+  const { data } = useSession();
 
   function getSanitizedSearchValue() {
     return searchValue.replace(/</g, "&lt;").replace(/>/g, "&gt;");
