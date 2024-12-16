@@ -5,10 +5,10 @@ import { z } from "zod";
 import { neon } from "@neondatabase/serverless";
 import bcrypt from 'bcryptjs';
 
-async function getUser (username) {
+async function getUser (email) {
     try {
         const sql = neon(process.env.DATABASE_URL);
-        const user = await sql`SELECT * FROM users WHERE username = ${username}`;
+        const user = await sql`SELECT * FROM users WHERE email = ${email}`;
         return user[0];
     } catch (error) {
         console.error(error);
@@ -36,5 +36,20 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
                 return null;
             }
         }
-    })]
+    })],
+    callbacks: {
+        session: async ({session}) => {
+            console.log(session.user.email);
+            const user = await getUser(session.user.email);
+            console.log(user);
+            session.userData = {
+                id: user.id,
+                username: user.username,
+                email: user.email,
+                is_verfied: user.is_verified,
+                robux: user.robux,
+            }
+            return session;
+        }
+    },
 });

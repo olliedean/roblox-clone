@@ -12,6 +12,7 @@
     "@fortawesome/fontawesome-svg-core": "^6.7.1",
     "@fortawesome/free-solid-svg-icons": "^6.7.1",
     "@fortawesome/react-fontawesome": "^0.2.2",
+    "@hookform/resolvers": "^3.9.1",
     "@neondatabase/serverless": "^0.10.4",
     "@prisma/client": "^6.0.1",
     "@tippyjs/react": "^4.2.6",
@@ -24,6 +25,7 @@
     "prisma": "^6.0.1",
     "react": "19.0.0-rc-66855b96-20241106",
     "react-dom": "19.0.0-rc-66855b96-20241106",
+    "react-hook-form": "^7.54.1",
     "zod": "^3.24.1"
   },
   "devDependencies": {

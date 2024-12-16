@@ -14,9 +14,9 @@ export default function LoginPage() {
             <div className="text-center text-2xl font-black">Login to Roblox</div>
             <div className="mt-4">
                 <form action={formAction}>
-                    <input type="text" className="w-full bg-neutral-900 text-white p-2 rounded-md" placeholder="Username" />
+                    <input type="text" name="username" className="w-full bg-neutral-900 text-white p-2 rounded-md" placeholder="Username" />
 
-                    <input type="password" className="w-full bg-neutral-900 text-white p-2 rounded-md mt-2" placeholder="Password" />
+                    <input type="password" name="password" className="w-full bg-neutral-900 text-white p-2 rounded-md mt-2" placeholder="Password" />
                     {errorMessage && (
                         <div className="text-red-500 text-xs mt-1">{errorMessage}</div>
                     )}
@@ -41,7 +41,7 @@ export default function LoginPage() {
                     </button>
                 </div>
                 <div className="text-center mt-12">
-                    <a href="/signup">Don't have an account? Sign Up</a>
+                    <a href="/signup">Don&apos;t have an account? Sign Up</a>
                 </div>
             </div>
         </div>

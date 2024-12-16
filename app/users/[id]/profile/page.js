@@ -1,6 +1,3 @@
-import Tippy from '@tippyjs/react';
-import { roundArrow } from 'tippy.js';
-import 'tippy.js/dist/svg-arrow.css';
 import Link from 'next/link';
 import React from 'react';
 import FriendListItem from '@/app/_items/FriendsListItem';
@@ -9,6 +6,7 @@ import RobloxBadge from './RobloxBadge';
 import Container from '@/app/Container';
 import HomeGameList from '@/app/_items/HomeGameList';
 import AvatarPreviewer from './AvatarPreviewer';
+import ProfilePreviousUsernames from './PreviousUsernames';
 
 export async function generateStaticParams() {
   return Array.from(Array(20).keys()).map((value) => ({variable: value}));
@@ -75,17 +73,7 @@ export default async function UserProfile({ params }) {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl quis
         </div>
         <div className="flex text-sm pt-2">
-          <span className="text-gray-400">
-            <Tippy
-              content="olliedean"
-              placement="bottom"
-              className="bg-neutral-900 px-3 py-1 text-sm text-gray-400"
-              arrow={roundArrow}
-            >
-              <div className="icon-spritesheet-4 icon-previous-usernames mr-1 opacity-50 hover:opacity-100" />
-            </Tippy>
-            Previous usernames
-          </span>
+          <ProfilePreviousUsernames />
           <Link href={`/report-abuse/?userId=${id}`} className="ml-auto text-red-500 font-medium">
             Report Abuse
           </Link>
