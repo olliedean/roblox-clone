@@ -7,6 +7,7 @@ import Container from '@/app/Container';
 import HomeGameList from '@/app/_items/HomeGameList';
 import AvatarPreviewer from './AvatarPreviewer';
 import ProfilePreviousUsernames from './PreviousUsernames';
+import { getUserById } from '@/auth';
 
 export async function generateStaticParams() {
   return Array.from(Array(20).keys()).map((value) => ({variable: value}));
@@ -14,8 +15,11 @@ export async function generateStaticParams() {
 
 export default async function UserProfile({ params }) {
   const { id } = await params;
+
+  const profileUser = await getUserById(id);
+
   const isPremium = true;
-  const isVerified = true;
+  const isVerified = profileUser.is_verified;
 
   return (
     <div className="max-w-5xl mx-auto mt-4">
@@ -27,12 +31,12 @@ export default async function UserProfile({ params }) {
           />
           <div className="flex flex-col leading-tight ml-3">
             <div className="flex flex-grow-0 gap-2">
-              <span className="text-[32px] font-extrabold">ollie</span>
+              <span className="text-[32px] font-extrabold">{profileUser.display_name}</span>
               {(isVerified && <span className="icon-verified-large mt-1" title="Verified Badge Icon" />)
               || (isPremium && <span className="icon-premium-profile mt-1" title="Premium Badge Icon" />)}
             </div>
             <span className="text-gray-400 text-sm">
-              @ollie
+              @{profileUser.username}
             </span>
 
             <div className="mt-auto font-medium flex flex-row">

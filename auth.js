@@ -5,7 +5,28 @@ import { z } from "zod";
 import { neon } from "@neondatabase/serverless";
 import bcrypt from 'bcryptjs';
 
-async function getUser (email) {
+export async function getUsers () {
+    try {
+        const sql = neon(process.env.DATABASE_URL);
+        const users = await sql`SELECT * FROM users`;
+        return users;
+    } catch (error) {
+        console.error(error);
+        return null;
+    }
+}
+export async function getUserById (id) {
+    try {
+        const sql = neon(process.env.DATABASE_URL);
+        const user = await sql`SELECT * FROM users WHERE id = ${id}`;
+        return user[0];
+    } catch (error) {
+        console.error(error);
+        return null;
+    }
+}
+
+export async function getUser (email) {
     try {
         const sql = neon(process.env.DATABASE_URL);
         const user = await sql`SELECT * FROM users WHERE email = ${email}`;
